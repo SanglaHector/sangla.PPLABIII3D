@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=".\js\scripts.js" type="module"></script>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="shortcut icon" href="./img/firma.svg">
+    <title>Modelo de parcial</title>
+</head>
+<body>
+    <header>
+        <div class="barra">
+            <img src="./img/pez.png" alt="">
+            <nav >
+                <a href="">Nosotros</a>
+                <a href="">Anuncio</a>
+                <a href="">Blog</a>
+                <a href="">Concato</a>
+            </nav>
+        </div>  
+    </header>
+    <main>
+        <h1>Administracion</h1>
+        
+        <form action="">
+                <input type="text" id="txtId" placeholder="ID"  disabled="true">
+                <input type="text"  id="txtTitulo" placeholder="Ingrese titulo" size="20" maxlength="20" required>
+                
+                <div id='transaccion'>
+                    <p>Animal</p>
+                    <label for="perro">Perro</label>
+                    <input type="radio" name="transaccion" id="perro" checked>
+                    <label for="gato">Gato</label>
+                <input type="radio" name="transaccion" id="gato" >
+            </div>
+            
+            <input type="text" id='txtDescripcion' placeholder="Descripcion" size="50" maxlength="100" required>
+            <input type="number" id="txtPrecio" placeholder="Precio" min="0"  required>
+            <div>
+                <input type="text" id="txtRaza" placeholder="Raza" required>
+                <input type="date" id="date" placeholder="Fecha" required>
+                <label for="elegir">Vacuna</label>
+                <select id="elegir" name="elegir" >
+                    <option value="Si" selected>Si</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+            <input type="submit" id="registrar" value="Guardar">
+        </form>
+    <div class="botones">
+        <button id="btnBuscar">Buscar</button>
+        <button id="btnModificar">Modificar</button>
+        <button id="btnEliminar">Eliminar</button>
+    </div>
+        <table id="tabla">
+            <thead id="encabezado">
+                <tr >
+                    <th>Id</th>
+                    <th>Titulo</th>
+                    <th>Transaccion</th>
+                    <th>Descripcion</th>
+                    <th>Precio</th>
+                    <th>Raza</th>
+                    <th>Fecha_nacimiento</th>
+                    <th>Vacuna</th>
+                </tr>
+            </thead>
+            <tbody id="body">
+    
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <div class="barra">
+            <nav >
+                <a href="">Nosotros</a>
+                <a href="">Anuncio</a>
+                <a href="">Blog</a>
+                <a href="">Concato</a>
+            </nav>
+            <p>Todos los derechos recervados &copy</p>
+        </div>
+    </footer>
+</body>
+</html>
